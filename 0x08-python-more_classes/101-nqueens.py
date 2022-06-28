@@ -7,7 +7,7 @@ using backtracking
 """
 
 
-def isSafe(m_queen, nqueen):
+def is_safe(m_queen, nqueen):
     """ Method that determines if the queens can or can't kill each other
 
     Args:
@@ -67,13 +67,13 @@ def queen(m_queen, nqueen):
 
         m_queen[nqueen] += 1
 
-        if isSafe(m_queen, nqueen) is True:
+        if is_safe(m_queen, nqueen) is True:
 
             if nqueen is not len(m_queen):
                 queen(m_queen, nqueen + 1)
 
 
-def solveNQueen(size):
+def solve_nqueen(size):
     """ Function that invokes the Backtracking algorithm
 
     Args:
@@ -104,4 +104,4 @@ if __name__ == '__main__':
         print("N must be at least 4")
         sys.exit(1)
 
-    solveNQueen(size)
+    solve_nqueen(size)
