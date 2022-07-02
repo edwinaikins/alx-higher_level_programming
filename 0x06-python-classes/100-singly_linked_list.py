@@ -3,6 +3,9 @@
 
 
 class Node:
+    """
+    Class to set parameters
+    """
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -29,6 +32,7 @@ class Node:
 
 
 class SinglyLinkedList:
+    """ Class to perform singly list"""
     def __str__(self):
         rtn = ""
         ptr = self.__head
