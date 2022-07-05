@@ -1,16 +1,19 @@
 #!/usr/bin/python3
+"""Module Comment"""
+
+
 class BaseGeometry:
     """ Class that defines the attributes of Geometric Shapes """
 
     def area(self):
-        """ Method that defines the area of a geomtric shape """
+        """ Method that defines the area of a geometric shape """
 
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """ Method that recieves the value property
+        """ Method that receives the value property
 
-        Árgs:
+        Args:
             name: name of the object
             value: value of the property
 
