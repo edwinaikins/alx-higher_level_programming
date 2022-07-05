@@ -26,7 +26,7 @@ class Magic:
         if status in self.dic:
             self.dic[status] += 1
 
-    def print_info(self, sig=0, frame=0):
+    def print_info(self):
         """ print status code """
         print("File size: {:d}".format(self.size))
         for key in sorted(self.dic.keys()):
